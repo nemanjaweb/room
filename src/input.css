@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width:1024px) {
+    #section-1 {
+    flex-direction:row;
+    }
+    .logo{
+        left: 0;
+    transform:translateX(0);
+    } 
+    #openBtn{
+        display: none;
+    }
+    
+
+    
+  }
+
+  @media screen and (min-width:1280px){
+      #buttons-2 {
+          display:none;
+      }
+    
+  }
+
+  .mobile-nav{
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 40;
+    padding: 20px;
+    background: hsl(0, 0%, 100%);
+    width: 100vw;
+    
+}
+
+.mobile-nav nav{
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav nav ul{
+    margin-left: 1rem;
+}
+
+.mobile-nav nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.3rem;
+}
+
+.mobile-nav nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#main svg:hover path { 
+    fill: #a1a1a1;
+}
+
+     
+@media screen and (max-width:1536px){
+    .karausel{
+        width: 1000px;
+    }
+}
+    
